@@ -1,6 +1,7 @@
 class Product < ApplicationRecord
   validates :title, presence: true, uniqueness: true,
-             length: {minimum: 2, maximum: 20}
+             length: {minimum: 10, maximum: 30}
+            #validates_length_of :title, :minimum => 10
   validates :description, presence: true,
              length: {minimum: 3, maximum: 1000}
             #too_long: "%{count} characters is the maximum allowed"}
