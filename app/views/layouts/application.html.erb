@@ -18,10 +18,10 @@
     <div id="side">
       <p><%= l @date_loaded , :format => :short%></p>
       <ul>
-        <li><a href="http://www.google.com">Home</a></li>
-        <li><a href="http://127.0.0.1:3000/store/index">Questions</a></li>
+        <li><%= link_to 'Home', store_index_url %></li>
         <li><%= link_to 'Catalogy', store_index_url %></li>
-        <li><a href="http://www..../news">News</a></li>
+        <li><%= link_to 'About Us', store_about_path%></li>
+        <li><%= link_to 'Discounts' %></li>
         <li><%= link_to 'Contact Us', store_contact_url %></li>
        </ul>
       </div>
@@ -31,4 +31,3 @@
   </div>
   </body>
 </html>
-

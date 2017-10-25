@@ -8,7 +8,8 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
         title: 'Lorem Ipsum',
         description: 'Wibbles are fun and the best is yet to come!, Wibbles are fun and the best is yet to come!',
         image_url: 'lorem.jpg',
-        price: 19.95
+        price: 19.95,
+        book_number: 'dgd45'
     }
   end
 

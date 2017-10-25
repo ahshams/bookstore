@@ -1,10 +1,16 @@
 Rails.application.routes.draw do
-  get 'store/index'
-  get 'store/contact'
+  resources :products
+  resources :line_items
+  resources :carts
+  #get 'store/index'
+  #get 'store/contact'
 
   #resources :store
 
   root to: "store#index", as: 'Store'
-  resources :products
+  get 'store/index'
+  get 'store/contact'
+  get 'store/about'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

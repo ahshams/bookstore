@@ -12,6 +12,7 @@ class ProductTest < ActiveSupport::TestCase
     product = Product.new
     assert !product.save
   end
+
   test "product attributes must not be empty" do
     product = Product.new
     assert !product.valid?
@@ -19,6 +20,7 @@ class ProductTest < ActiveSupport::TestCase
     assert product.errors[:description].any?
     assert product.errors[:price].any?
     assert product.errors[:image_url].any?
+    assert !product.errors[:book_number].any?
   end
 
   test "product price must be positive" do
