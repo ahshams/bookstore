@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   #resources :store
 
-  root to: "store#index", as: 'Store'
+  root to: "store#index", as: 'store'
   get 'store/index'
   get 'store/contact'
   get 'store/about'
