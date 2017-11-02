@@ -1,9 +1,14 @@
 <% if notice %>
     <p id="notice"><%= notice %></p>
 <% end %>
+
+<%= render @cart %>
 <div class="cart_title">Your Pragmatic Cart</div>
 <table>
   <!--<% total = 0 %>-->
+
+  <%= render(@cart.line_items) %>
+
   <tr class="label_line">
     <td>Qty</td>
     <td>Item</td>
@@ -21,7 +26,7 @@
       <% end %>
 
     <tr class="total_line">
-      <td colspan="3">Total </td>
+      <td colspan="3", class="label_line">Total </td>
       <td class="total_cell"><%= number_to_currency(@cart.total_price) %></td>
     </tr>
 
