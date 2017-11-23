@@ -9,4 +9,8 @@ class StoreController < ApplicationController
     session[:counter] ||= 0
     session[:counter] += 1
   end
+
+  def cancel_order
+    redirect_to store_url, notice: "Your have cancelled your order"
+  end
 end

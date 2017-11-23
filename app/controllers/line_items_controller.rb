@@ -32,13 +32,8 @@ class LineItemsController < ApplicationController
     @line_item = @cart.add_product(product.id)
     @line_item.product = product
 
-
     respond_to do |format|
       if @line_item.save
-        session[:counter] = 0
-        #format.html { redirect_to store_url }
-        #format.json { render :show, status: :created, location: @line_item }
-      #elsif @line_item.save
         session[:counter] = 0
         format.html { redirect_to store_url }
         format.js   { @current_item = @line_item }
