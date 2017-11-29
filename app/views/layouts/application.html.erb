@@ -11,8 +11,20 @@
   <body class='<%= controller.controller_name %>'>
 
   <div id="banner">
-    <%= image_tag("logo.png") %>
-    <%= @page_title || "Potsdam BookStore" %>
+    <%= form_tag store_path, class: 'locale' do %>
+    <!--<%= select_tag 'set_locale', options_for_select(LANGUAGES, I18n.locale.to_s), onchange: 'this.form.submit()' %>
+        <%= submit_tag 'submit' %>
+        <%= javascript_tag "$('.locale input').hide()" %>-->
+
+       <div id="lang">
+         <%= link_to_unless I18n.locale == :en, image_tag("english.gif", size: "25x10"), locale: :en %></br>
+        <%= link_to_unless I18n.locale == :es, image_tag("spanish.gif", size: "25x10"), locale: :es %>
+       </div>
+    <% end %>
+
+    <%= link_to image_tag("logo.png"), store_index_url %>
+    <%= @page_title || t('.title') %>
+
   </div>
   <div id="columns">
     <div id="side">
@@ -21,13 +33,13 @@
           <%= render @cart %>
         <% end %>
       <% end %>
-      <p><%= l @date_loaded , :format => :short%></p>
+      <p><%= t('.time')%><%= l @date_loaded, format: '%H:%M'%></p>
       <ul>
-        <li><%= link_to 'Home', store_index_url %></li>
-        <li><%= link_to 'Your Orders', orders_path %></li>
-        <li><%= link_to 'About Us', store_about_path%></li>
-        <li><%= link_to 'Discounts' %></li>
-        <li><%= link_to 'Contact Us', store_contact_url %></li>
+        <li><%= link_to t('.home'), store_index_url %></li>
+        <li><%= link_to t('.orders'), orders_path %></li>
+        <li><%= link_to t('.about'), store_about_path%></li>
+        <li><%= link_to t('.discounts') %></li>
+        <li><%= link_to t('.contact'), store_contact_url %></li>
        </ul>
 
       <% if session[:user_id] %>

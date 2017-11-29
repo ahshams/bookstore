@@ -1,11 +1,16 @@
 class StoreController < ApplicationController
-  skip_before_filter :authorize
+  skip_before_action :authorize
 
   def index
-    @products = Product.order(:title)
-    @cart = current_cart
-    @count = increment_count
+    if params[:set_locale]
+      redirect_to store_path(locale: params[:set_locale])
+    else
+      @products = Product.order(:title)
+      @cart = current_cart
+      @count = increment_count
+    end
   end
+
 
   def increment_count
     session[:counter] ||= 0
