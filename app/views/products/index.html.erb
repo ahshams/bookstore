@@ -13,6 +13,8 @@
             <dt><%= product.title %></dt>
             <dd><%= truncate(strip_tags(product.description),
                              length: 80) %></dd>
+            <dd><%= truncate(strip_tags(product.book_number),
+                             length: 80) %></dd>
           </dl>
         </td>
 

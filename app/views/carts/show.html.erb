@@ -1,0 +1,37 @@
+<% if notice %>
+    <p id="notice"><%= notice %></p>
+<% end %>
+
+<%= render @cart %>
+<div class="cart_title">Your Pragmatic Cart</div>
+<table>
+  <!--<% total = 0 %>-->
+
+  <%= render(@cart.line_items) %>
+
+  <tr class="label_line">
+    <td>Qty</td>
+    <td>Item</td>
+    <td>Unit Price</td>
+    <td>Sub Total</td>
+  </tr>
+  <% @cart.line_items.each do |item| %>
+      <tr>
+        <td><%= item.quantity %></td>
+        <td><%= item.product.title %></td>
+        <td><%=number_to_currency(item.product.price)%> ==> </td>
+        <td class="item_price"><%=number_to_currency(item.total_price)%></td>
+      </tr>
+      <!--<% total += item.product.price*item.quantity %>-->
+      <% end %>
+
+    <tr class="total_line">
+      <td colspan="3", class="label_line">Total </td>
+      <td class="total_cell"><%= number_to_currency(@cart.total_price) %></td>
+    </tr>
+
+</table>
+
+<%= link_to 'Edit', edit_cart_path(@cart) %> |
+<%= link_to 'Back', carts_path %>
+<%= link_to 'Empty cart', @cart, method: :delete, data: {confirm: 'Are you sure?'} %>

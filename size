@@ -1,0 +1,206 @@
+= ..ssiizzee
+
+(from gem amq-protocol-2.1.0)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  FFrraammeeSSuubbccllaassss
+------------------------------------------------------------------------------
+  size()
+
+------------------------------------------------------------------------------
+
+
+(from gem actionpack-5.0.1)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  UUppllooaaddeeddFFiillee
+------------------------------------------------------------------------------
+  size()
+
+------------------------------------------------------------------------------
+
+Shortcut for tempfile.size.
+
+
+(from gem actionpack-5.0.1)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  MMiiddddlleewwaarreeSSttaacckk
+------------------------------------------------------------------------------
+  size()
+
+------------------------------------------------------------------------------
+
+
+(from gem actionview-5.0.1)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  AAccttiioonnVViieeww::::PPaarrttiiaallIItteerraattiioonn
+------------------------------------------------------------------------------
+
+The number of iterations that will be done by the partial.
+
+
+(from gem bundler-1.14.5)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  IInnddeexx
+------------------------------------------------------------------------------
+  size()
+
+------------------------------------------------------------------------------
+
+
+(from gem bundler-1.14.5)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  BBuunnddlleerr::::PPaarraalllleellIInnssttaalllleerr
+------------------------------------------------------------------------------
+
+
+(from gem yard-0.9.8)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  SSoouurrcceeIInnddeexx
+------------------------------------------------------------------------------
+  size()
+
+------------------------------------------------------------------------------
+
+
+(from gem httpclient-2.8.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  HHTTTTPP::::MMeessssaaggee::::BBooddyy
+------------------------------------------------------------------------------
+
+Size of body.  nil when size is unknown (e.g. chunked response).
+
+
+(from gem httpclient-2.8.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  HHTTTTPP::::MMeessssaaggee::::BBooddyy::::PPaarrttss
+------------------------------------------------------------------------------
+
+
+(from gem httpclient-2.8.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  HHTTTTPPCClliieenntt::::JJRRuubbyySSSSLLSSoocckkeett::::TTrruussttSSttoorreeLLooaaddeerr
+------------------------------------------------------------------------------
+
+
+(from gem nio4r-2.0.0)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  BByytteeBBuuffffeerr
+------------------------------------------------------------------------------
+  size()
+
+------------------------------------------------------------------------------
+
+
+(from gem newrelic_rpm-3.18.1.330)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  EEvveennttBBuuffffeerr
+------------------------------------------------------------------------------
+  size()
+
+------------------------------------------------------------------------------
+
+
+(from gem newrelic_rpm-3.18.1.330)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  SSttaattssHHaasshh
+------------------------------------------------------------------------------
+  size()
+
+------------------------------------------------------------------------------
+
+
+(from gem nokogiri-1.7.0.1)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  NNooddeeSSeett
+------------------------------------------------------------------------------
+  size()
+
+------------------------------------------------------------------------------
+
+
+(from gem public_suffix-2.0.5)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  LLiisstt
+------------------------------------------------------------------------------
+  size()
+
+------------------------------------------------------------------------------
+
+Gets the number of elements in the list.
+
+@return [Integer]
+
+
+(from gem test-unit-3.2.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  UUTTFF88LLiinnee
+------------------------------------------------------------------------------
+  size()
+
+------------------------------------------------------------------------------
+
+
+(from gem test-unit-3.2.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  TTeessttCCaassee
+------------------------------------------------------------------------------
+  size()
+
+------------------------------------------------------------------------------
+
+
+(from gem test-unit-3.2.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  TTeessttSSuuiittee
+------------------------------------------------------------------------------
+  size()
+
+------------------------------------------------------------------------------
+
+Retuns the rolled up number of tests in this suite; i.e. if the suite contains
+other suites, it counts the tests within those suites, not the suites
+themselves.
+
+
+(from gem thread_safe-0.3.6)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  AAttoommiiccRReeffeerreenncceeCCaacchheeBBaacckkeenndd
+------------------------------------------------------------------------------
+  size()
+
+------------------------------------------------------------------------------
+
+
+(from gem thread_safe-0.3.6)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  CCaacchhee
+------------------------------------------------------------------------------
+  size()
+
+------------------------------------------------------------------------------
+
+
+(from gem thread_safe-0.3.6)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  NNoonnCCoonnccuurrrreennttCCaacchheeBBaacckkeenndd
+------------------------------------------------------------------------------
+  size()
+
+------------------------------------------------------------------------------
+
+
+(from gem thread_safe-0.3.6)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  SSyynncchhrroonniizzeeddCCaacchheeBBaacckkeenndd
+------------------------------------------------------------------------------
+  size()
+
+------------------------------------------------------------------------------
+
+==== ((UUsseess  ssuuppeerrccllaassss  mmeetthhoodd  RRDDoocc::::AAnnyyMMeetthhoodd::  TThhrreeaaddSSaaffee::::NNoonnCCoonnccuurrrreennttCCaacchheeBBaacckkeenndd##ssiizzee))
+------------------------------------------------------------------------------
+
+
+(from gem thread_safe-0.3.6)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  VVoollaattiilleeTTuuppllee
+------------------------------------------------------------------------------
+  size()
+
+------------------------------------------------------------------------------
+
+
+(from gem will_paginate-3.1.5)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  RReellaattiioonnMMeetthhooddss
+------------------------------------------------------------------------------
+  size()
+
+------------------------------------------------------------------------------
+
+workaround for Active Record 3.0
+
+
+(from gem will_paginate-3.1.5)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  SSeeqquueellMMeetthhooddss
+------------------------------------------------------------------------------
+  size()
+
+------------------------------------------------------------------------------
+
+
